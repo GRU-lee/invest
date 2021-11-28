@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset ="utf-8">
+  <title>모투</title>
+  <style>
+    body {
+      background-color:#ffffff;
+    }
+    /* 현황표 테이블 */
+    .table1 {
+      float:left;
+      padding-left:5%;
+    }
+    /* 지갑 리스트 테이블 */
+    .table2 {
+      float:right;
+      padding-right:15%;
+    }
+    /* MoTu 부분 */
+    .box {
+      background-color:#f6b912;
+      height:350px;
+      margin-bottom:48px;
+    }
+    .main_Title {
+      width: 350px;
+    margin: auto;
+    padding-top: 150px;
+    font-size: 90px;
+    line-height: 31px;
+    font-weight: bold;
+    color: #ffffff;
+    }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #212120;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #212120;
+  color: white;
+}
+.topnav a.active:hover {
+  color:black;
+  background-color: #ddd;
+}
+table.coin-icon {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  border: 1px groove #ccc;
+  margin: 20px 10px;
+  font-size:25px;
+}
+/* 서식 배경 */
+table.coin-icon thead {
+  border-right: 1px groove #ccc;
+  border-left: 1px groove #ccc;
+  background: #4c4c4c;
+}
+table.coin-icon thead th {
+  text-align:center;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px groove #ccc;
+  color: #ffffff;
+}
+/* 코인이름 부분 */
+table.coin-icon tbody th {
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px groove #ccc;
+  background: #4c4c4c;
+  color:white;
+}
+table.coin-icon td {
+  width: 250px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px groove #ccc;
+}
+.table1 tbody td {
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.table2 tbody td {
+  text-align:center;
+  padding-top:25px;
+}
+  </style>
+</head>
+  <body>
+    <div class="topnav">
+  <a class="active" href="#home">HOME</a>
+  <a href="#news">MY 지갑</a>
+  <a href="invest.html">투자하기</a>
+</div>
+<center>
+  <div class="box">
+    <p class="main_Title">MOTU</p>
+  </div>
+  <div class="table1">
+  <table class="coin-icon">
+    <thead>
+      <tr>
+        <th scope="cols">NAME</th>
+        <th scope="cols">PRICE</th>
+        <th scope="cols">24H VOLUME</th>
+        <th scope="cols">24H CHANGE</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row"><img src="Bitcoin-icon.png" alt="BTC" width="50"/>  BTC</th>
+      <td>가격</td>
+      <td>거래량</td>
+      <td>변동률</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="ETH-icon.png" alt="ETH" width="40"/>  ETH</th>
+      <td>가격</td>
+      <td>거래량</td>
+      <td>변동률</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="XRP-icon.png" alt="XRP" width="40"/>  XRP</th>
+      <td>가격</td>
+      <td>거래량</td>
+      <td>변동률</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="doge-icon.png" alt="DOGE" width="40"/>DOGE</th>
+      <td>가격</td>
+      <td>거래량</td>
+      <td>변동률</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="ada-icon.png" alt="ADA" width="40"/>  ADA</th>
+      <td>가격</td>
+      <td>거래량</td>
+      <td>변동률</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div class="table2">
+  <table class="coin-icon">
+    <thead>
+      <tr>
+        <th scope="cols">NAME</th>
+        <th scope="cols">PRICE</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row"><img src="wallet-icon.png" alt="wallet" width="70"/>  지갑1</th>
+      <td><form action="" method="get" class="wallet"/><input type="button" value="생성하기" required/></td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="wallet-icon.png" alt="wallet" width="70"/>  지갑2</th>
+      <td><form action="" method="get" class="wallet"/><input type="button" value="생성하기" required/></td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="wallet-icon.png" alt="wallet" width="70"/>  지갑3</th>
+      <td><form action="" method="get" class="wallet"/><input type="button" value="생성하기" required/></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+  </center>
+
+  </body>
+</html>
